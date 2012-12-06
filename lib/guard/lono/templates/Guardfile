@@ -1,0 +1,3 @@
+guard "lono" do
+  watch(%r{^config/lono.rb$})
+end
