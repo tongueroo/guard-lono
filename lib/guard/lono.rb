@@ -1,20 +1,17 @@
-require "guard"
-require "guard/guard"
+require "guard/compat/plugin"
 require "colorize"
 
 module Guard
-  class Lono < Guard
+  class Lono < Plugin
 
     # Initialize a Guard.
-    # @param [Array<Guard::Watcher>] watchers the Guard file watchers
     # @param [Hash] options the custom Guard options
-    def initialize(watchers = [], options = {})
-      super
-      @results = {}
+    def initialize(options = {})
       @options = {
         :all_on_start => true,
         :notification => true,
-      }.merge(@options)
+      }.merge(options)
+      super(@options)
     end
 
     # Call once when Guard starts. Please override initialize method to init stuff.

@@ -1,4 +1,4 @@
-guard "lono" do
+guard :lono do
   watch(%r{^config/lono.rb$})
   watch(%r{^templates/.*$})
 end
