@@ -1,3 +1,3 @@
 module Guard
-  LONO_VERSION = "0.0.2"
+  LONO_VERSION = "1.0.0"
 end
