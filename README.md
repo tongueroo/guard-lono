@@ -8,8 +8,8 @@ Please be sure to have [Guard](https://github.com/guard/guard) installed before 
 
 Install the gem:
 
-    $ gem install guard-hono
+    $ gem install guard-lono
 
 Add the guard-cloudformation definition to your Guardfile by running this command:
 
-    $ guard init hono
+    $ guard init lono
