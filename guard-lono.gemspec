@@ -17,6 +17,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "colorize"
   gem.add_dependency "guard"
+  gem.add_dependency "guard-compat"
 
   gem.add_development_dependency "rspec"
   gem.add_development_dependency "travis-lint"
